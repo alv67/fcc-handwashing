@@ -20,7 +20,9 @@
   <a href="https://freesound.org/people/metrostock99/sounds/345086/">sorgente sonora</a>
 </h3>
 
-<audio bind:this={audio} src="sound.wav" />
+<audio bind:this={audio} src="sound.wav">
+  <track kind="captions" />
+</audio>
 
 
 <style>

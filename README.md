@@ -19,6 +19,12 @@ e affinchè la libreria lavori correttamente occorre anche installare il pacchet
 ```
 npm install --save-dev rollup-plugin-css-only
 ```
-questo in automatico effettua anche la modifica necessaria al file `rollup.config.js` aggiungendo la linea 
+questo in automatico effettua anche la modifica necessaria al file `rollup.config.js`  
+- aggiungendo la linea 
 
-`import css from 'rollup-plugin-css-only';`
+  `import css from 'rollup-plugin-css-only';`
+
+- inoltre si è scelto di utilizzare il file separato `extra.css` per raggruppare i comandi css, in modo da migliorare le prestazioni dell'appilcazione
+
+  `css({ output: 'extra.css' }),`
+
